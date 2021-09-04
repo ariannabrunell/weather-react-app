@@ -15,6 +15,7 @@ export default function App() {
                 className="form-control"
                 id="city-input"
                 autocomplete="off"
+                autoFocus="on"
               />
             </div>
             <div className="col-3">
@@ -24,7 +25,7 @@ export default function App() {
         </form>
         <Today />
       </div>
-      <footer className="gitLink">
+      <footer>
         <a href="github.com/ariannabrunell/vanilla-weather-app" target="_blank">
           Open-source code
         </a>
