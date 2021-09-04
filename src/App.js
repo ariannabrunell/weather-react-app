@@ -12,13 +12,13 @@ export default function App() {
               <input
                 type="search"
                 placeholder="Type a city.."
-                class="form-control"
+                className="form-control"
                 id="city-input"
                 autocomplete="off"
               />
             </div>
             <div className="col-3">
-              <input type="submit" value="Search" class="btn btn-primary" />
+              <input type="submit" value="Search" className="btn btn-primary" />
             </div>
           </div>
         </form>
