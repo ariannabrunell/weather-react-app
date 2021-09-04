@@ -24,6 +24,12 @@ export default function App() {
         </form>
         <Today />
       </div>
+      <footer className="gitLink">
+        <a href="github.com/ariannabrunell/vanilla-weather-app" target="_blank">
+          Open-source code
+        </a>
+        by Arianna Brunell
+      </footer>
     </div>
   );
 }

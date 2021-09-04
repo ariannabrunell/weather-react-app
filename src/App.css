@@ -27,8 +27,12 @@ li {
 .weatherApp {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding: 20px;
-  margin: 20px;
+  margin: 20px auto;
   border: 1px solid #d4d4d4;
   border-radius: 5px;
   width: 500px;
+}
+
+.gitLink {
+  text-align: center;
 }
