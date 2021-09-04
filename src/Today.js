@@ -14,7 +14,7 @@ export default function Today() {
             <li>
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                alt=""
+                alt="Weather Icon"
                 id="icon"
               />
             </li>
