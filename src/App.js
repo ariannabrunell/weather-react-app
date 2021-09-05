@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
+import Weather from "./Weather";
 import axios from "axios";
 import "./App.css";
 
@@ -44,45 +44,7 @@ export default function App(props) {
               </div>
             </div>
           </form>
-          <div className="Today">
-            <h1 id="city">{weatherData.city}</h1>
-            <ul>
-              <li id="date">
-                <FormattedDate date={weatherData.date} />
-              </li>
-              <li id="description">{weatherData.description}</li>
-            </ul>
-            <div className="row">
-              <div className="col-md-6">
-                <ul>
-                  <li>
-                    <img
-                      src={weatherData.iconUrl}
-                      alt={weatherData.description}
-                      id="icon"
-                    />
-                  </li>
-                  <li>
-                    <span className="temperature" id="temperature">
-                      {Math.round(weatherData.temperature)}
-                    </span>
-                    <span className="units">°F</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-md-6">
-                <ul className="weatherData">
-                  <li>
-                    Humidity: <span id="humidity">{weatherData.humidity}</span>%
-                  </li>
-                  <li>
-                    Wind: <span id="wind">{Math.round(weatherData.wind)}</span>
-                    km/h
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <Weather data={weatherData} />
         </div>
         <footer>
           <a
