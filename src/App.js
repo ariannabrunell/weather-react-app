@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./App.css";
 
@@ -8,9 +9,9 @@ export default function App(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      date: "Friday 20:43",
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
-      city: response.data.main.name,
+      city: response.data.name,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
@@ -30,7 +31,7 @@ export default function App(props) {
                   placeholder="Type a city.."
                   className="form-control"
                   id="city-input"
-                  autocomplete="off"
+                  autoComplete="off"
                   autoFocus="on"
                 />
               </div>
@@ -46,7 +47,9 @@ export default function App(props) {
           <div className="Today">
             <h1 id="city">{weatherData.city}</h1>
             <ul>
-              <li id="date">{weatherData.date}</li>
+              <li id="date">
+                <FormattedDate date={weatherData.date} />
+              </li>
               <li id="description">{weatherData.description}</li>
             </ul>
             <div className="row">
@@ -61,7 +64,7 @@ export default function App(props) {
                   </li>
                   <li>
                     <span className="temperature" id="temperature">
-                      {weatherData.temperature}
+                      {Math.round(weatherData.temperature)}
                     </span>
                     <span className="units">°F</span>
                   </li>
@@ -73,7 +76,8 @@ export default function App(props) {
                     Humidity: <span id="humidity">{weatherData.humidity}</span>%
                   </li>
                   <li>
-                    Wind: <span id="wind">{weatherData.wind}</span>km/h
+                    Wind: <span id="wind">{Math.round(weatherData.wind)}</span>
+                    km/h
                   </li>
                 </ul>
               </div>
