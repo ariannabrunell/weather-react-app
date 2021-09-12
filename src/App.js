@@ -68,8 +68,9 @@ export default function App(props) {
         </div>
         <footer>
           <a
-            href="github.com/ariannabrunell/vanilla-weather-app"
+            href="https://github.com/ariannabrunell"
             target="_blank"
+            rel="noreferrer"
           >
             Open-source code
           </a>
