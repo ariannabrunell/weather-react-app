@@ -50,7 +50,6 @@ export default function App(props) {
                   className="form-control"
                   id="city-input"
                   autoComplete="off"
-                  autoFocus="on"
                   onChange={changeCity}
                 />
               </div>
@@ -58,7 +57,7 @@ export default function App(props) {
                 <input
                   type="submit"
                   value="Search"
-                  className="btn btn-primary"
+                  className="btn btn-search"
                 />
               </div>
             </div>

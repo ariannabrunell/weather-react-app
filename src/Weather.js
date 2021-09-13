@@ -13,18 +13,20 @@ export default function Weather(props) {
         </li>
         <li id="description">{props.data.description}</li>
       </ul>
-      <div className="row">
-        <div className="col-md-6">
-          <ul>
-            <li>
-              <WeatherIcon code={props.data.icon} size={60} />
-            </li>
-            <li>
+
+      <div className="row mt-3">
+        <div className="col-6">
+          <div className="d-flex">
+            <div className="icon">
+              <WeatherIcon code={props.data.icon} size={50} />
+            </div>
+
+            <div className="mr-5">
               <Temperature imperial={props.data.temperature} />
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-6">
           <ul className="weatherData">
             <li>
               Humidity: <span id="humidity">{props.data.humidity}</span>%

@@ -2,37 +2,83 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  color: grey;
+.btn-search {
+  background: #b7472a;
+  color: #fff2e5;
+}
+
+.btn-search:hover {
+  color: #fff2e5;
+  background: #eb9788;
+}
+
+.App input {
+  border: none;
+}
+
+.App input:focus {
+  color: #b7472a;
+}
+
+.App h1 {
+  color: #b7472a;
   font-size: 30px;
   font-weight: 100;
   line-height: 28px;
   margin-top: 10px;
 }
 
-ul {
+.App ul {
   margin: 0;
   padding: 0;
 }
 
-li {
+.App li {
   list-style: none;
-  color: grey;
+  color: #b7472a;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
   text-transform: capitalize;
 }
 
+.App footer {
+  color: #b7472a;
+}
+
+.App a {
+  color: #b7472a;
+}
+
 .weatherApp {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: #fff2e5;
   padding: 20px;
   margin: 20px;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #faf5e4;
   border-radius: 5px;
-  width: 500px;
+  width: 600px;
 }
 
 .App footer {
   margin: 20px;
+}
+
+.temperature {
+  color: #b7472a;
+  font-size: 35px;
+}
+
+.unit {
+  font-size: 15px;
+  color: #b7472a;
+  opacity: 0.7;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.unit {
+  position: relative;
+  top: -13px;
 }

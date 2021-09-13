@@ -1,6 +1,7 @@
 .WeatherForecast {
-  color: grey;
+  color: #b7472a;
   text-align: center;
+  margin-top: 5px;
 }
 
 .Forecast-min {
