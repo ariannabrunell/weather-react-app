@@ -46,10 +46,11 @@ export default function App(props) {
               <div className="col-9">
                 <input
                   type="search"
-                  placeholder="Type a city.."
+                  placeholder="Type a city..."
                   className="form-control"
                   id="city-input"
                   autoComplete="off"
+                  autoFocus="on"
                   onChange={changeCity}
                 />
               </div>
@@ -72,7 +73,7 @@ export default function App(props) {
             rel="noreferrer"
           >
             Open-source code
-          </a>
+          </a>{" "}
           by Arianna Brunell
         </footer>
       </div>
